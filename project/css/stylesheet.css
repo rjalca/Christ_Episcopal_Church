@@ -55,6 +55,9 @@ nav li {
 
 nav a {
 	text-decoration: none;
+	font-family: 'Metal Mania', cursive;
+	font-size: 1.5em;
+	color: #000;
 	display: block;
 	height: 60px;
 	line-height: 60px;
@@ -65,14 +68,15 @@ a:visited {
 	color: #800000;
 }
 
-a:active {
-	color: #0000FF;
-	background: #FFF764;
-}
-
 a:hover {
-	color: #000;
-	background: #FFF764;
+	color: #0000ff;
+	background: #f5f5dc;
+	border-right: dashed 1px #000;
+	border-left: dashed 1px #000;
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	-o-border-radius: .3em;
+	border-radius: .3em;
 }
 
 #main_cta {
@@ -88,10 +92,24 @@ a:hover {
 	float: left;
 }
 
+#church_img {
+	margin-left: 4.1666667%;
+	-moz-border-bottom-right-radius: .3em;
+	-webkit-border-bottom-right-radius: .3em;
+	-o-border-bottom-right-radius: .3em;
+	border-bottom-right-radius: .3em;
+	-moz-border-bottom-left-radius: .3em;
+	-webkit-border-bottom-left-radius: .3em;
+	-o-border-bottom-left-radius: .3em;
+	border-bottom-left-radius: .3em;
+}
+
+
 #services, #prayer, #giving {
 	width: 29.6527778%; /* 284.666667px */
 	height: 250px;
 	margin-top: 40px;
+	margin-bottom: 10px;
 	border: solid 1px #000;
 	-moz-border-radius: .3em;
 	-webkit-border-radius: .3em;
@@ -111,8 +129,21 @@ a:hover {
 	margin-right: 10%;
 }
 
-h2, .info {
+h1, h2, .info, .subtitle {
 	text-align: center;
+}
+
+h1, h2 {
+	font-family: 'Hammersmith One', sans-serif;
+}
+
+h1, .subtitle {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.subtitle, .info, #time {
+	font-family: 'Georgia', sans-serif;
 }
 
 .info {
@@ -120,7 +151,7 @@ h2, .info {
 	padding-right: 10%;
 }
 
-#button {
+.button {
 	display: inline-block;
 	margin-right: 10%;
 	float: right;
@@ -146,13 +177,13 @@ h2, .info {
 	box-shadow: 0 2px 2px #000;
 }
 
-#button:hover {
+.button:hover {
 	text-decoration: none;
 	background: -webkit-gradient(linear, left top, left bottom, from(#F88E11), to(#F06015));
 	background: -moz-linear-gradient(top, #F88E11, #F06015);
 }
 
-#button:active {
+.button:active {
 	position: relative;
 	top: 1px;
 	background: -webkit-gradient(linear, left top, left bottom, from(#F47A20), to(#EEC000));
