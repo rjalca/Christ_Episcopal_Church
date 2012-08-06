@@ -1,197 +1,37 @@
 /*-------Start of Condensed Meyer Reset----*/
 
-
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, 
+pre, form, fieldset, input, textarea, p, blockquote, th, td { 
+	padding: 0;
+	margin: 0;
+	}
+fieldset, img { 
+	border: 0;
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+ol, ul {
+	list-style: none;
+	}
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-weight: normal;
+	font-style: normal;
+	}
+caption, th {
+	text-align: left;
+	}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size: 100%;
+	}
+q:before, q:after {
+	content: '';
+	}
+abbr, acronym { 
+	border: 0;
+	}
 
 /*--------End of reset------*/
 
-body {
-	max-width: 960px;
-	margin: 0 auto;
-	background-image: url('../images/fzm-Denim.Jeans.Texture-09-[600x600].jpg');
-	font-family: 'Arial', cursive, Serif;
-	font-size: 1em;
-}
-
-#logo {
-	margin-bottom: 40px;
-	border: solid 1px #000;
-	-moz-box-shadow: 0 2px 2px #fff;
-	-webkit-box-shadow: 0 2px 2px #fff;
-	-o-box-shadow: 0 2px 2px #fff;
-	box-shadow: 0 2px 2px #fff;
-	-moz-border-radius: .3em;
-	-webkit-border-radius: .3em;
-	-o-border-radius: .3em;
-	border-radius: .3em;
-	float: left;
-}
-
-nav {
-	width: 87.1875%; /* 837px */
-	height: 60px;
-	margin-bottom: 50px;
-	margin-top: 10px;
-	border-top: solid 1px #000;
-	border-bottom: solid 1px #000;
-	border-right: solid 1px #000;
-	background: #b0e0e6;
-	-moz-border-top-right-radius: .3em;
-	-webkit-top-right-border-radius: .3em;
-	-o-border-top-right-radius: .3em;
-	border-top-right-radius: .3em;
-	-moz-border-bottom-right-radius: .3em;
-	-webkit-bottom-right-border-radius: .3em;
-	-o-border-bottom-right-radius: .3em;
-	border-bottom-right-radius: .3em;
-	float: right;
-}
-
-nav ul {
-	width: 100%; /* 838px */
-	margin: 0 auto;
-	padding: 0;
-	list-style-type: none;
-	overflow: hidden;
-}
-
-nav li {
-	width: 20%; /* 120px */
-	float: left;
-}
-
-nav a {
-	text-decoration: none;
-	font-family: 'Metal Mania', cursive;
-	font-size: 1.5em;
-	color: #000;
-	display: block;
-	height: 60px;
-	line-height: 60px;
-	text-align: center;
-}
-
-a:visited {
-	color: #800000;
-}
-
-a:hover {
-	color: #0000ff;
-	background: #f5f5dc;
-	border-right: dashed 1px #000;
-	border-left: dashed 1px #000;
-	-moz-border-radius: .3em;
-	-webkit-border-radius: .3em;
-	-o-border-radius: .3em;
-	border-radius: .3em;
-}
-
-#main_cta {
-	width: 100%;
-	height: 400px;
-	overflow: hidden;
-	border: solid 1px #000;
-	-moz-border-radius: .3em;
-	-webkit-border-radius: .3em;
-	-o-border-radius: .3em;
-	border-radius: .3em;
-	background: #f5f5dc;
-	float: left;
-}
-
-#church_img {
-	margin-left: 4.1666667%;
-	-moz-border-bottom-right-radius: .3em;
-	-webkit-border-bottom-right-radius: .3em;
-	-o-border-bottom-right-radius: .3em;
-	border-bottom-right-radius: .3em;
-	-moz-border-bottom-left-radius: .3em;
-	-webkit-border-bottom-left-radius: .3em;
-	-o-border-bottom-left-radius: .3em;
-	border-bottom-left-radius: .3em;
-}
-
-
-#services, #prayer, #giving {
-	width: 29.6527778%; /* 284.666667px */
-	height: 250px;
-	margin-top: 40px;
-	margin-bottom: 10px;
-	border: solid 1px #000;
-	-moz-border-radius: .3em;
-	-webkit-border-radius: .3em;
-	-o-border-radius: .3em;
-	border-radius: .3em;
-	background: #f5f5dc;
-	float: left;
-}
-
-#services, #prayer {
-	margin-right: 5.208333%;
-}
-
-#time {
-	list-style-type: none;
-	text-align: right;
-	margin-right: 10%;
-}
-
-h1, h2, .info, .subtitle {
-	text-align: center;
-}
-
-h1, h2 {
-	font-family: 'Hammersmith One', sans-serif;
-}
-
-h1, .subtitle {
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
-.subtitle, .info, #time {
-	font-family: 'Georgia', sans-serif;
-}
-
-.info {
-	padding-left: 10%;
-	padding-right: 10%;
-}
-
-.button {
-	display: inline-block;
-	margin-right: 10%;
-	float: right;
-	outline: none;
-	cursor: pointer;
-	width: 35%;
-	height: 20px;
-	line-height: 20px;
-	font-size: 1em;
-	text-align: center;
-	text-decoration: none;
-	background: #EEC000;
-	background: -webkit-gradient(linear, left top, left bottom, from(#EEC000), to(#F47A20));
-	background: -moz-linear-gradient(top, #EEC000, #F47A20);
-	border: solid 1px #000;
-	-moz-border-radius: .5em;
-	-webkit-border-radius: .5em;
-	-o-border-radius: .5em;
-	border-radius: .5em;
-	-moz-box-shadow: 0 2px 2px #000;
-	-webkit-box-shadow: 0 2px 2px #000;
-	-o-box-shadow: 0 2px 2px #000;
-	box-shadow: 0 2px 2px #000;
-}
-
-.button:hover {
-	text-decoration: none;
-	background: -webkit-gradient(linear, left top, left bottom, from(#F88E11), to(#F06015));
-	background: -moz-linear-gradient(top, #F88E11, #F06015);
-}
-
-.button:active {
-	position: relative;
-	top: 1px;
-	background: -webkit-gradient(linear, left top, left bottom, from(#F47A20), to(#EEC000));
-	background: -moz-linear-gradient(top, #F47A20, #EEC000);
-}
