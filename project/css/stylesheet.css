@@ -33,5 +33,454 @@ abbr, acronym {
 	border: 0;
 	}
 
-/*--------End of reset------*/
+/*--------End of reset------Start of Global Body------*/
 
+body {
+	max-width: 960px;
+	margin: 0 auto;
+	background-image: url('../images/fzm-Denim.Jeans.Texture-09-[600x600].jpg');
+	font-family: 'Arial', cursive, Serif;
+	font-size: 1em;
+}
+
+/*--------End of Global Body------Start of Global Header-----*/
+
+#logo_container {
+	width: 12.5%;
+}
+
+#logo {
+	max-width: 100%;
+	margin-bottom: 30px;
+	border: solid 1px #000;
+	-moz-box-shadow: 0 2px 2px #fff;
+	-webkit-box-shadow: 0 2px 2px #fff;
+	-o-box-shadow: 0 2px 2px #fff;
+	box-shadow: 0 2px 2px #fff;
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	-o-border-radius: .3em;
+	border-radius: .3em;
+	float: left;
+}
+
+nav {
+	width: 87.1875%; /* 837px */
+	height: 60px;
+	margin-top: 10px;
+	border-top: solid 1px #000;
+	border-bottom: solid 1px #000;
+	border-right: solid 1px #000;
+	background: #b0e0e6;
+	-moz-border-top-right-radius: .3em;
+	-webkit-top-right-border-radius: .3em;
+	-o-border-top-right-radius: .3em;
+	border-top-right-radius: .3em;
+	-moz-border-bottom-right-radius: .3em;
+	-webkit-bottom-right-border-radius: .3em;
+	-o-border-bottom-right-radius: .3em;
+	border-bottom-right-radius: .3em;
+	float: right;
+}
+
+nav ul {
+	width: 100%; /* 838px */
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+nav li {
+	width: 20%; /* 120px */
+	float: left;
+}
+
+nav a {
+	text-decoration: none;
+	font-family: 'Metal Mania', sans-serif, cursive;
+	font-size: 1.5em;
+	color: #000;
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+
+nav a:visited {
+	color: #800000;
+}
+
+nav a:hover {
+	color: #0000ff;
+	background: #f5f5dc;
+	border-right: dashed 1px #000;
+	border-left: dashed 1px #000;
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	-o-border-radius: .3em;
+	border-radius: .3em;
+}
+
+/*-----End of Global Header----Start of Home_Page Main CTA----*/
+
+#main_cta {
+	width: 100%; /* 960px */
+	height: 280px;
+	overflow: hidden;
+	border: solid 1px #000;
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	-o-border-radius: .3em;
+	border-radius: .3em;
+	background: #f5f5dc;
+	float: left;
+}
+
+#rides_container, #kitchen_container {
+	width: 27.33485%; /* 240px/878px */
+}
+
+#church_container {
+	width: 36.44646%; /* 320px/878px */
+}
+
+img {
+	max-width: 100%;
+}
+
+.cta_img {
+	margin-left: 2.2779%; /* 20px/878px */
+	float: left;
+}
+
+#rides_img, #church_img, #kitchen_img {
+	-moz-border-bottom-right-radius: .3em;
+	-webkit-border-bottom-right-radius: .3em;
+	-o-border-bottom-right-radius: .3em;
+	border-bottom-right-radius: .3em;
+	-moz-border-bottom-left-radius: .3em;
+	-webkit-border-bottom-left-radius: .3em;
+	-o-border-bottom-left-radius: .3em;
+	border-bottom-left-radius: .3em;
+}
+
+#church_img {
+	height: 220px;
+}
+
+h1, h2 {
+	font-family: 'Hammersmith One', sans-serif, cursive;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+.main_cta_titles {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/*----End of Home_Page Main CTA ----Start of Home_Page Small CTA---*/
+
+#services, #prayer, #giving {
+	width: 31.5909%; /* 278px/880px */
+	height: 250px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	border: solid 1px #000;
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	-o-border-radius: .3em;
+	border-radius: .3em;
+	background: #f5f5dc;
+	float: left;
+}
+
+#services, #prayer {
+	margin-right: 2.2779%; /* 20px/880px */
+}
+
+#prayer, #giving {
+	text-align: center;
+}
+
+.small_cta_titles {
+	margin-top: 20px;
+	margin-bottom: 20px;	
+}
+
+.info {
+	padding-left: 7.19424%; /* 20px/278px */
+	padding-right: 7.19424%; /* 20px/278px */
+	font-family: 'Georgia', sans-serif, cursive;
+	font-size: 1.125em;
+}
+
+#time li {
+	padding-right: 10.79136%; /* 30px/278px */
+	text-align: right;
+	font-size: 1.125em;
+}
+
+#wednesday {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.button {
+	display: inline-block;
+	margin-right: 10.79136%; /* 30px/278px */
+	margin-top: 40px;
+	margin-bottom: 40px;
+	float: right;
+	outline: none;
+	cursor: pointer;
+	width: 35%;
+	height: 20px;
+	line-height: 20px;
+	font-size: 1em;
+	text-align: center;
+	text-decoration: none;
+	background: #EEC000;
+	border: solid 1px #000;
+	-moz-border-radius: .5em;
+	-webkit-border-radius: .5em;
+	-o-border-radius: .5em;
+	border-radius: .5em;
+	-moz-box-shadow: 0 2px 2px #000;
+	-webkit-box-shadow: 0 2px 2px #000;
+	-o-box-shadow: 0 2px 2px #000;
+	box-shadow: 0 2px 2px #000;
+}
+
+.button:hover {
+	text-decoration: none;
+	background: -webkit-gradient(linear, left top, left bottom, from(#F88E11), to(#F06015));
+	background: -moz-linear-gradient(top, #F88E11, #F06015);
+}
+
+.button:active {
+	position: relative;
+	top: 1px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#F47A20), to(#EEC000));
+	background: -moz-linear-gradient(top, #F47A20, #EEC000);
+}
+
+/*-----End of Home_Page Small CTA-----Start of Ministries_Page CTAs----*/
+
+#ministry_body {
+	width: 100%; /* 960px */
+	float: left;
+}
+
+#prayer_cta, #young_cta, #women_cta, #men_cta {
+	width: 48.75%; /* 468px/960px */
+	height: 250px;
+	margin-bottom: 20px;
+	background: #f5f5dc;
+	border: solid 1px #000;
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	-o-border-radius: .3em;
+	border-radius: .3em;
+	float: left;
+}
+
+#prayer_cta, #women_cta {
+	margin-right: 2.08333%; /* 20px/960px */
+}
+
+.img_container {
+	width: 82.90598%; /* 388px/468px */
+	padding-left: 8.547%; /* 40px/468px */
+}
+
+#ministry_body img {
+	max-width: 100%;
+	height: 200px;
+}
+
+/*----End of Ministries_Page CTAs----Start of Tithe_Page CTAs-----*/
+
+#tithe_body {
+	width: 100%;
+	float: left;
+}
+
+#personal_info, #billing_info, #payment_info {
+	width: 48.75%; /* 468px/960px */
+	background: #f5f5dc;
+	height: 220px;
+	margin-bottom: 20px;
+	border: solid 1px #000;
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	-o-border-radius: .3em;
+	border-radius: .3em;
+	float: left;
+}
+
+#personal_info {
+	margin-right: 2.08333%; /* 20px/960px */
+}
+
+#tithe_body h1 {
+	margin-top: 10px;
+	text-align: left;
+	margin-left: 4.2735042%; /* 20px/468px */
+}
+
+form {
+	width: 91.4529914%; /* 428px/468px */
+	margin-left: 4.2735042%; /* 20px/468px */
+	margin-top: 10px;
+}
+
+#personal_info label, #billing_info label {
+	display: block;
+	float: left;
+	width: 6.25%; /* 60px/960px */
+	margin-right: 10.6837606%; /* 50px/468px */
+	margin-bottom: 10px;
+}
+
+#personal_info input, #billing_info input {
+	margin-bottom: 10px;
+	margin-right: 2.1367521%; /* 10px/468px */
+}
+
+.name {
+	width: 37.1794871%; /* 174px/468px */
+}
+
+.address {
+	width: 78.8461538%; /* 369px/468px */
+}
+
+.city {
+	display: block;
+	width: 37.1794871%; /* 174px/468px */
+	float: left;
+	margin-right: 4.2735043%; /* 20px/468px */
+}
+
+.state_label {
+	display: block;
+	float: left;
+	margin-right: 2.1367521%; /* 10px/468px */
+}
+
+.state {
+	width: 24.3589743%; /* 114px/468px */
+	margin-bottom: 10px;
+}
+
+.zipcode {
+	display: block;
+	width: 19.2307692%; /* 90px/468px */
+	float: left;
+	margin-right: 3.4188034%; /* 16px/468px */
+}
+
+.country {
+	width: 38.4615383%; /* 180px/468px */
+}
+
+#billing {
+	margin-right: 10px;
+	float: left;
+}
+
+#personal_info p {
+	margin-top: 10px;
+}
+
+#payment_info {
+	height: 230px;
+}
+
+#payment_info label {
+	float: left;
+	width: 27.7777777%; /* 130px/468px */	
+}
+
+#payment_info select {
+	margin-bottom: 10px;
+}
+
+#payment_info input {
+	margin-right: 2.1367521%; /* 10px/468px */
+	margin-bottom: 10px;
+}
+
+#expire_date_mth, #expire_date_yr {
+	width: 7.6923076%; /* 36px/468px */
+	float: left;
+}
+
+#security_code {
+	width: 17.7350427%; /* 83px/468px */
+}
+
+#amount {
+	width: 19.2307692%; /* 90px/468px */
+}
+
+#payment_info button {
+	margin-top: 10px;
+	margin-right: 2.1367521%; /* 10px/468px */
+}
+
+/*----End of Tithe_Page CTAs-----Start of Global Footer------*/
+
+footer {
+	width: 100%; /* 960px */
+	height: 30px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	background: #b0e0e6;
+	border: solid 1px #000;
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	-o-border-radius: .3em;
+	border-radius: .3em;
+	font-size: .75em;
+	float: right;
+}
+
+footer p {
+	display: block;
+	width: 44.79166%; /* 430px/960px */
+	height: 30px;
+	line-height: 30px;
+	padding-left: 2.2779%; /* 20px/960px */
+	float: left;
+}
+
+footer ul {
+	display: block;
+	overflow: hidden;
+	width: 20.83333%; /* 200px/960px */
+	float: right;
+}
+
+footer li {
+	margin-right: 4.16666%;
+	float: left;
+}
+
+footer a {
+	color: #000;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+}
+
+/*------End of Global Footer-----*/

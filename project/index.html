@@ -13,7 +13,9 @@
 	</head>
 	<body>
 		<header>
-			<img id="logo" src="images/church_logo.jpg" alt="Logo Image">
+			<div id="logo_container">
+				<img id="logo" src="images/church_logo.jpg" alt="Logo Image">
+			</div>
 			<nav>
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -24,51 +26,65 @@
 				</ul>
 			</nav>
 		</header>
+		
 		<div id="main_cta">
-			
-			<div id="rides">
+			<div id="rides_container" class="cta_img"> 
 				<img id="rides_img" src="images/rides.jpg" alt="Rides Image">
-				<h1>Fun events for all</h1>
+				<h2 class="main_cta_titles">Fun events for all</h2>
 			</div>
-			<div id="church">
+			
+			<div id="church_container" class="cta_img">
 				<img id="church_img" src="images/church.jpg" width=880 height=300 alt="Church Image">
-				<h1>We Welcome Everyone</h1>
+				<h1 class="main_cta_titles">We Welcome Everyone</h1>
 			</div>
-			<div id="kitchen">
+			
+			<div id="kitchen_container" class="cta_img">
 				<img id="kitchen_img" src="images/soup_kitchen.jpg" alt="Soup Kitchen Image">
-				<h1>Here to help others</h1>
+				<h2 class="main_cta_titles">Here to help others</h2>
 			</div>
 		</div>
-		<div id="small_cta">
+		
+		<div>
 			<div id="services">
-				<h2>Service Times</h2>
+				<h2 class="small_cta_titles">Service Times</h2>
 				<ul id="time">
 					<li>Sunday: 9:00am - 10:45am</li>
 					<li>11:00am - 1:45am</li>
 					<li>6:00pm - 7:45pm</li>
-					<li>Wednesday: 6:00pm - 7:45pm</li>
+					<li id="wednesday">Wednesday: 6:00pm - 7:45pm</li>
 				</ul>
 			</div>
+			
 			<div id="prayer">
-				<h2>Prayer Request</h2>
-				<p class="info">Do you have a need?</p>
-				<p class="info">Our Prayer Team is willing to stand in agreement with you.</p>
+				<h2 class="small_cta_titles">Prayer Request</h2>
+				
+				<div class="info">
+					<p>Do you have a need?</p>
+					<p>Our Prayer Team is willing to stand in agreement with you.</p>
+				</div>
+				
 				<h3 class="button" onclick="location.href='ministries.html'" >Let's Pray</h3>
 			</div>
+			
 			<div id="giving">
-				<h2>Online Giving</h2>
-				<p class="info">Secure and Save!!</p>
-				<p class="info">Our Online Giving is available for your convenience.</p>
+				<h2 class="small_cta_titles">Online Giving</h2>
+				
+				<div class="info">
+					<p>Secure and Save!!</p>
+					<p>Our Online Giving is available for your convenience.</p>
+				</div>
+				
 				<h3 class="button" onclick="location.href='tithe.html'">Give</h3>
 			</div>
 		</div>
+		
 		<footer>
 			<p>All copyrights reserved &copy;</p>
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="terms.html">Terms &amp; Condition</a></li>
-			<ul>
+			</ul>
 		</footer>
 	</body>
 </html>
