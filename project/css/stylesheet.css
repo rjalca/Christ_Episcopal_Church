@@ -122,6 +122,17 @@ nav a:hover {
 	border-radius: .3em;
 }
 
+nav li#current a {
+	color: #800000;
+	background: #f5f5dc;
+	border-right: dashed 1px #000;
+	border-left: dashed 1px #000;
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	-o-border-radius: .3em;
+	border-radius: .3em;
+}
+
 /*-----End of Global Header----Start of Home_Page Main CTA----*/
 
 #main_cta {
@@ -154,7 +165,7 @@ img {
 	float: left;
 }
 
-#rides_img, #church_img, #kitchen_img {
+#main_cta img {
 	-moz-border-bottom-right-radius: .3em;
 	-webkit-border-bottom-right-radius: .3em;
 	-o-border-bottom-right-radius: .3em;
@@ -169,7 +180,7 @@ img {
 	height: 220px;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-family: 'Hammersmith One', sans-serif, cursive;
 	text-align: center;
 }
@@ -182,7 +193,11 @@ h2 {
 	font-size: 1.5em;
 }
 
-.main_cta_titles {
+h3 {
+	font-size: 1.25em;
+}
+
+#main_cta h1, #main_cta h2 {
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
@@ -211,7 +226,7 @@ h2 {
 	text-align: center;
 }
 
-.small_cta_titles {
+#small_cta h2 {
 	margin-top: 20px;
 	margin-bottom: 20px;	
 }
@@ -282,7 +297,7 @@ h2 {
 
 #prayer_cta, #young_cta, #women_cta, #men_cta {
 	width: 48.75%; /* 468px/960px */
-	height: 250px;
+	height: 220px;
 	margin-bottom: 20px;
 	background: #f5f5dc;
 	border: solid 1px #000;
@@ -298,13 +313,36 @@ h2 {
 }
 
 .img_container {
-	width: 82.90598%; /* 388px/468px */
-	padding-left: 8.547%; /* 40px/468px */
+	width: 42.7350427%; /* 200px/468px */
 }
 
 #ministry_body img {
 	max-width: 100%;
 	height: 200px;
+	border: solid 1px #000;
+	-moz-border-top-left-radius: .3em;
+	-webkit-border-top-left-radius: .3em;
+	-o-border-top-left-radius: .3em;
+	border-top-left-radius: .3em;
+	-moz-border-bottom-right-radius: .3em;
+	-webkit-border-bottom-right-radius: .3em;
+	-o-border-bottom-right-radius: .3em;
+	border-bottom-right-radius: .3em;
+	float: left;
+}
+
+#ministry_body p {
+	text-align: center;
+	font-family: 'Georgia', sans-serif, cursive;
+}
+
+#ministry_body ul {
+	width: 42.7350427%; /* 200px/468px */
+	list-style-type: circle;
+	margin-top: 10px;
+	float: left;
+	padding-left: 6.4102564%; /* 30px/468px */
+	
 }
 
 /*----End of Ministries_Page CTAs----Start of Tithe_Page CTAs-----*/
@@ -344,9 +382,8 @@ form {
 }
 
 #personal_info label, #billing_info label {
-	display: block;
 	float: left;
-	width: 6.25%; /* 60px/960px */
+	width: 5.208333%; /* 50px/960px */
 	margin-right: 10.6837606%; /* 50px/468px */
 	margin-bottom: 10px;
 }
@@ -356,41 +393,39 @@ form {
 	margin-right: 2.1367521%; /* 10px/468px */
 }
 
-.name {
+#personal_first_name, #personal_last_name, #billing_first_name, #billing_last_name {
 	width: 37.1794871%; /* 174px/468px */
 }
 
-.address {
+#personal_address, #billing_address {
 	width: 78.8461538%; /* 369px/468px */
 }
 
-.city {
-	display: block;
+#personal_city, #billing_city {
 	width: 37.1794871%; /* 174px/468px */
 	float: left;
 	margin-right: 4.2735043%; /* 20px/468px */
 }
 
-.state_label {
-	display: block;
+.state_label, .country_label {
 	float: left;
 	margin-right: 2.1367521%; /* 10px/468px */
+	margin-left: 1.7094017%; /* 8px/468px */
 }
 
-.state {
+#personal_state, #billing_state {
 	width: 24.3589743%; /* 114px/468px */
 	margin-bottom: 10px;
 }
 
-.zipcode {
-	display: block;
+#personal_zipcode, #billing_zipcode {
 	width: 19.2307692%; /* 90px/468px */
 	float: left;
 	margin-right: 3.4188034%; /* 16px/468px */
 }
 
-.country {
-	width: 38.4615383%; /* 180px/468px */
+#personal_country, #billing_country {
+	width: 37.3931624%; /* 175px/468px */
 }
 
 #billing {
@@ -420,6 +455,10 @@ form {
 	margin-bottom: 10px;
 }
 
+#card_number {
+	width: 67.9487179%; /* 318px/468px */
+}
+
 #expire_date_mth, #expire_date_yr {
 	width: 7.6923076%; /* 36px/468px */
 	float: left;
@@ -436,12 +475,14 @@ form {
 #payment_info button {
 	margin-top: 10px;
 	margin-right: 2.1367521%; /* 10px/468px */
+	height: 20px;
+	line-height: 20px;
 }
 
 /*----End of Tithe_Page CTAs-----Start of Global Footer------*/
 
 footer {
-	width: 100%; /* 960px */
+	width: 99.7916667%; /* 958px */
 	height: 30px;
 	margin-bottom: 10px;
 	margin-top: 10px;
@@ -472,7 +513,7 @@ footer ul {
 }
 
 footer li {
-	margin-right: 4.16666%;
+	margin-right: 4.16666%; /* 40px/960px */
 	float: left;
 }
 
