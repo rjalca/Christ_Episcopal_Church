@@ -20,7 +20,7 @@
 					<li><a href="about.html">About Us</a></li>
 					<li><a href="ministries.html">Ministries</a></li>
 					<li><a href="sermons.html">Sermons</a></li>
-					<li><a href="tithe.html">Tithe/Give</a></li>
+					<li id="current"><a href="tithe.html">Tithe/Give</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -29,23 +29,23 @@
 				<h1>Personal Information:</h1>
 				<form method="post" action="mailto:example@example.com">
 					<div>
-						<label for="name">Name:</label>
-						<input type="text" name="name" class="name"/>
-						<input type="text" name="name" class="name"/>
+						<label for="personal_first_name">Name:</label>
+						<input type="text" name="name" id="personal_first_name"/>
+						<input type="text" name="name" id="personal_last_name"/>
 					</div>
 					<div>
-						<label for="address">Address:</label>
-						<input type="text" name="address" class="address"/>
+						<label for="personal_address">Address:</label>
+						<input type="text" name="address" id="personal_address"/>
 					</div>
 					<div>
-						<label for="city">City:</label>
-						<input type="text" name="city" class="city"/>
+						<label for="personal_city">City:</label>
+						<input type="text" name="city" id="personal_city"/>
 					</div>
 					<div class="state_label">
-						<label for="state">State:</label>
+						<label for="personal_state">State:</label>
 					</div>
 					<div>
-						<select name="state" class="state">
+						<select name="state" id="personal_state">
 						<option value="AK">AK</option>
 							<option value="AZ">AZ</option>
 							<option value="AR">AR</option>
@@ -99,14 +99,14 @@
 						</select>
 					</div>
 					<div>
-						<label for="zipcode">Zipcode:</label>
-						<input type="text" name="zipcode" class="zipcode"/>
+						<label for="personal_zipcode">Zipcode:</label>
+						<input type="text" name="zipcode" id="personal_zipcode"/>
+					</div>
+					<div class="country_label">
+						<label for="personal_country">Country:</label>
 					</div>
 					<div>
-						<label for="country">Country:</label>
-					</div>
-					<div>
-						<select name="country" class="country">
+						<select name="country" id="personal_country">
 							<option value="  " selected>(please select a country)</option>
 							<option value="United States">United States</option>
 							<option value="Afghanistan">Afghanistan</option>
@@ -313,23 +313,23 @@
 				<h1>Billing Information:</h1>
 				<form method="post" action="mailto:example@example.com">
 					<div>
-						<label for="name">Name:</label>
-						<input type="text" name="name" class="name"/>
-						<input type="text" name="name" class="name"/>
+						<label for="billing_first_name">Name:</label>
+						<input type="text" name="name" id="billing_first_name"/>
+						<input type="text" name="name" id="billing_last_name"/>
 					</div>
 					<div>
-						<label for="address">Address:</label>
-						<input type="text" name="address" class="address"/>
+						<label for="billing_address">Address:</label>
+						<input type="text" name="address" id="billing_address"/>
 					</div>
 					<div>
-						<label for="city">City:</label>
-						<input type="text" name="city" class="city"/>
+						<label for="billing_city">City:</label>
+						<input type="text" name="city" id="billing_city"/>
 					</div>
 					<div class="state_label">
-						<label for="state">State:</label>
+						<label for="billing_state">State:</label>
 					</div>
 					<div>
-						<select name="state" class="state">
+						<select name="state" id="billing_state">
 							<option value="AK">AK</option>
 							<option value="AZ">AZ</option>
 							<option value="AR">AR</option>
@@ -383,14 +383,14 @@
 						</select>
 					</div>
 					<div>
-						<label for="zipcode">Zipcode:</label>
-						<input type="text" name="zipcode" class="zipcode"/>
+						<label for="billing_zipcode">Zipcode:</label>
+						<input type="text" name="zipcode" id="billing_zipcode"/>
+					</div>
+					<div class="country_label">
+						<label for="billing_country">Country:</label>
 					</div>
 					<div>
-						<label for="country">Country:</label>
-					</div>
-					<div>
-						<select name="country" class="country">
+						<select name="country" id="billing_country">
 							<option value="  " selected>(please select a country)</option>
 							<option value="United States">United States</option>
 							<option value="Afghanistan">Afghanistan</option>
@@ -608,7 +608,7 @@
 						<input type="text" name="card_number" id="card_number"/>
 					</div>
 					<div>
-						<label for="expire_date">Expiration Date:</label>
+						<label for="expire_date_mth">Expiration Date:</label>
 						<input type="text" name="expire_date" id="expire_date_mth"/>
 						<input type="text" name="expire_date" id="expire_date_yr"/>
 					</div>
