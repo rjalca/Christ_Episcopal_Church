@@ -43,10 +43,14 @@ body {
 	font-size: 1em;
 }
 
+header, footer {
+	width: 100%;
+}
+
 /*--------End of Global Body------Start of Global Header-----*/
 
 #logo_container {
-	width: 12.5%;
+	width: 12.5%; /* 120px/960px */
 }
 
 #logo {
@@ -64,10 +68,8 @@ body {
 	float: left;
 }
 
-nav {
-	width: 87.1875%; /* 837px */
-	height: 60px;
-	margin-top: 10px;
+nav ul {
+	width: 87.5%; /* 840px/960px */
 	border-top: solid 1px #000;
 	border-bottom: solid 1px #000;
 	border-right: solid 1px #000;
@@ -80,13 +82,6 @@ nav {
 	-webkit-bottom-right-border-radius: .3em;
 	-o-border-bottom-right-radius: .3em;
 	border-bottom-right-radius: .3em;
-	float: right;
-}
-
-nav ul {
-	width: 100%; /* 838px */
-	margin: 0 auto;
-	padding: 0;
 	list-style-type: none;
 	overflow: hidden;
 }
@@ -238,7 +233,7 @@ h3 {
 	font-size: 1.125em;
 }
 
-#time li {
+#services li {
 	padding-right: 10.79136%; /* 30px/278px */
 	text-align: right;
 	font-size: 1.125em;
@@ -388,7 +383,7 @@ form {
 	margin-bottom: 10px;
 }
 
-#personal_info input, #billing_info input {
+#personal_info input, #billing_info input, #payment_info input {
 	margin-bottom: 10px;
 	margin-right: 2.1367521%; /* 10px/468px */
 }
@@ -450,11 +445,6 @@ form {
 	margin-bottom: 10px;
 }
 
-#payment_info input {
-	margin-right: 2.1367521%; /* 10px/468px */
-	margin-bottom: 10px;
-}
-
 #card_number {
 	width: 67.9487179%; /* 318px/468px */
 }
@@ -473,7 +463,7 @@ form {
 }
 
 #payment_info button {
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-right: 2.1367521%; /* 10px/468px */
 	height: 20px;
 	line-height: 20px;
@@ -482,8 +472,6 @@ form {
 /*----End of Tithe_Page CTAs-----Start of Global Footer------*/
 
 footer {
-	width: 99.7916667%; /* 958px */
-	height: 30px;
 	margin-bottom: 10px;
 	margin-top: 10px;
 	background: #b0e0e6;
@@ -497,8 +485,7 @@ footer {
 }
 
 footer p {
-	display: block;
-	width: 44.79166%; /* 430px/960px */
+	width: 18.75%; /* 180px/960px */
 	height: 30px;
 	line-height: 30px;
 	padding-left: 2.2779%; /* 20px/960px */
@@ -506,22 +493,190 @@ footer p {
 }
 
 footer ul {
-	display: block;
-	overflow: hidden;
-	width: 20.83333%; /* 200px/960px */
-	float: right;
+	width: 81.25%; /* 780px/960px */
+	padding-left: 450px;
 }
 
 footer li {
-	margin-right: 4.16666%; /* 40px/960px */
+	width: 20%; /* 192px/960px */
 	float: left;
 }
 
 footer a {
-	color: #000;
 	display: block;
 	height: 30px;
 	line-height: 30px;
+	text-align: center;
 }
 
-/*------End of Global Footer-----*/
+/*------End of Global Footer------------Media Queries------------------------------------*/
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+
+	nav ul{
+		width: 84.8329048%; /* 660px/778px */
+	}
+
+	footer ul {
+		width: 64.2673521%; /* 500px/778px */
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+	
+	h2 {
+		font-size: 1.25em;
+	}
+	
+	#services, #prayer {
+		margin-right: 2.0833333%; /* 20px/960px */
+	}
+	
+	#services li, .info {
+		font-size: 1em;
+	}
+
+	#prayer_cta, #young_cta, #women_cta, #men_cta {
+		margin: 0 auto;
+		width: 57.8406169%; /* 450px/768px */
+		margin-bottom: 20px;
+		float: none;
+	}
+	
+	#ministry_body p, #ministry_body li {
+		font-size: .9em;
+	}
+
+	#personal_info, #billing_info, #payment_info {
+		margin: 0 auto;
+		width: 78.125%; /* 600px/768px */
+		margin-bottom: 20px;
+		float: none;
+	}
+
+}
+
+/* Mobile Landscape size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+
+	#logo_container, #rides_container, #kitchen_container   {
+		display: none;
+	}
+	
+	nav ul {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	
+	footer p {
+		width: 30%; /* 156px/520px */
+	}
+	
+	footer ul {
+		width: 70%; /* 364px/520px */
+	}
+	
+	#church_container {
+		width: 76.9230769%; /* 400px/520px */
+		margin: 0 auto;
+		float: none;
+	}
+	
+	#main_cta {
+		margin-bottom: 20px;
+		float: none;
+	}
+	
+	#services, #prayer, #giving, #prayer_cta, #young_cta, #women_cta, #men_cta  {
+		width: 67.3076923%; /* 350px/960px */
+		margin: 0 auto;
+		float: none;
+		margin-bottom: 20px;
+	}
+
+	#ministry_body img {
+		display: none;
+	}
+	
+	#ministry_body ul {
+		width: 90%; /* 315px/350px */
+	}
+
+	#personal_info, #billing_info, #payment_info {
+		width: 86.5384615%; /* 450px/520px */
+		height: 240px;
+		margin: 0 auto;
+		float: none;
+		margin-bottom: 20px;
+	}
+
+}
+
+/* Mobile Portrait size to Mobile Landscape (devices and browsers) */
+@media only screen and (max-width: 519px) {
+
+	#logo_container, #rides_container, #kitchen_container   {
+		display: none;
+	}
+	
+	nav ul {
+		width: 100%; /* 519px */
+		margin-bottom: 30px;
+	}
+
+	footer p {
+		width: 29.8651252%; /* 155px/519px */
+		font-size: .75em;
+	}
+	
+	footer ul {
+		width: 70.1348747%; /* 364px/519px */
+		padding-left: 10px;
+	}
+	
+	footer li {
+		width: 30%; /* 18px/519px */
+		font-size: .75em;
+	}
+	
+	#church_container {
+		width: 76.9230769%; /* 400px/519px */
+		margin: 0 auto;
+		float: none;
+	}
+	
+	#main_cta {
+		margin-bottom: 20px;
+		float: none;
+	}
+	
+	#services, #prayer, #giving, #prayer_cta, #young_cta, #women_cta, #men_cta {
+		width: 57.8034682%; /* 300px/519px */
+		margin: 0 auto;
+		float: none;
+		margin-bottom: 20px;
+	}	
+	
+	#ministry_body img {
+		display: none;
+	}
+
+	#ministry_body ul {
+		width: 90%;
+	}
+
+	#personal_info, #billing_info, #payment_info {
+		width: 86.5384615%; /* 450px/519px */
+		height: 240px;
+		margin: 0 auto;
+		float: none;
+		margin-bottom: 20px;
+	}
+	
+	#tithe_body label {
+		font-size: .95em;
+	}
+
+}

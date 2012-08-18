@@ -13,7 +13,9 @@
 	</head>
 	<body>
 		<header>
-			<img id="logo" src="images/church_logo.jpg" alt="Logo Image">
+			<div id="logo_container">
+				<img id="logo" src="images/church_logo.jpg" alt="Logo Image">
+			</div>
 			<nav>
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -30,8 +32,8 @@
 				<form method="post" action="mailto:example@example.com">
 					<div>
 						<label for="personal_first_name">Name:</label>
-						<input type="text" name="name" id="personal_first_name"/>
-						<input type="text" name="name" id="personal_last_name"/>
+						<input type="text" name="name" id="personal_first_name" placeholder="First Name"/>
+						<input type="text" name="name" id="personal_last_name" placeholder="Last Name"/>
 					</div>
 					<div>
 						<label for="personal_address">Address:</label>
@@ -46,7 +48,8 @@
 					</div>
 					<div>
 						<select name="state" id="personal_state">
-						<option value="AK">AK</option>
+							<option>Select a State</option>
+							<option value="AK">AK</option>
 							<option value="AZ">AZ</option>
 							<option value="AR">AR</option>
 							<option value="CA">CA</option>
@@ -107,7 +110,7 @@
 					</div>
 					<div>
 						<select name="country" id="personal_country">
-							<option value="  " selected>(please select a country)</option>
+							<option>Select a Country</option>
 							<option value="United States">United States</option>
 							<option value="Afghanistan">Afghanistan</option>
 							<option value="Albania">Albania</option>
@@ -314,8 +317,8 @@
 				<form method="post" action="mailto:example@example.com">
 					<div>
 						<label for="billing_first_name">Name:</label>
-						<input type="text" name="name" id="billing_first_name"/>
-						<input type="text" name="name" id="billing_last_name"/>
+						<input type="text" name="name" id="billing_first_name" placeholder="First Name"/>
+						<input type="text" name="name" id="billing_last_name" placeholder="Last Name"/>
 					</div>
 					<div>
 						<label for="billing_address">Address:</label>
@@ -330,6 +333,7 @@
 					</div>
 					<div>
 						<select name="state" id="billing_state">
+							<option>Select a State</option>
 							<option value="AK">AK</option>
 							<option value="AZ">AZ</option>
 							<option value="AR">AR</option>
@@ -391,7 +395,7 @@
 					</div>
 					<div>
 						<select name="country" id="billing_country">
-							<option value="  " selected>(please select a country)</option>
+							<option>Select a Country</option>
 							<option value="United States">United States</option>
 							<option value="Afghanistan">Afghanistan</option>
 							<option value="Albania">Albania</option>
@@ -597,6 +601,7 @@
 					</div>
 					<div>
 						<select name="card_type" id="card_type">
+							<option>Select Card Type</option>
 							<option value="American Express">American Express</option>
 							<option value="Discovery">Discovery</option>
 							<option value="Mastercard">Mastercard</option>
@@ -605,12 +610,12 @@
 					</div>
 					<div>
 						<label for="card_number">Card Number:</label>
-						<input type="text" name="card_number" id="card_number"/>
+						<input type="text" name="card_number" id="card_number" placeholder="No Space Necessary"/>
 					</div>
 					<div>
 						<label for="expire_date_mth">Expiration Date:</label>
-						<input type="text" name="expire_date" id="expire_date_mth"/>
-						<input type="text" name="expire_date" id="expire_date_yr"/>
+						<input type="text" name="expire_date" id="expire_date_mth" placeholder="MM"/>
+						<input type="text" name="expire_date" id="expire_date_yr" placeholder="YY"/>
 					</div>
 					<div>
 						<label for="security_code">Security Code:</label>
