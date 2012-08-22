@@ -38,13 +38,20 @@ abbr, acronym {
 body {
 	max-width: 960px;
 	margin: 0 auto;
-	background-image: url('../images/fzm-Denim.Jeans.Texture-09-[600x600].jpg');
+	background-color: #b8b38d;
 	font-family: 'Arial', cursive, Serif;
 	font-size: 1em;
 }
 
 header, footer {
 	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+	font-family: 'Hammersmith One', sans-serif, cursive;
+	text-align: center;
 }
 
 /*--------End of Global Body------Start of Global Header-----*/
@@ -55,7 +62,6 @@ header, footer {
 
 #logo {
 	max-width: 100%;
-	margin-bottom: 30px;
 	border: solid 1px #000;
 	-moz-box-shadow: 0 2px 2px #fff;
 	-webkit-box-shadow: 0 2px 2px #fff;
@@ -68,16 +74,28 @@ header, footer {
 	float: left;
 }
 
+header h1 {
+	font-family: 'Metal Mania', sans-serif, cursive;
+	width: 87.5%; /* 840px/960px */
+	height: 50px;
+	line-height: 50px;
+	font-size: 2.5em;
+	letter-spacing: 4px;
+	background: #f5f5dc;
+	border-top: solid 1px #000;
+	border-right: solid 1px #000;
+	-moz-border-top-right-radius: .15em;
+	-webkit-top-right-border-radius: .15em;
+	-o-border-top-right-radius: .15em;
+	border-top-right-radius: .15em;
+	margin-left: 12.708333%; /* 122px/960px */
+}
+
 nav ul {
 	width: 87.5%; /* 840px/960px */
-	border-top: solid 1px #000;
 	border-bottom: solid 1px #000;
 	border-right: solid 1px #000;
 	background: #b0e0e6;
-	-moz-border-top-right-radius: .3em;
-	-webkit-top-right-border-radius: .3em;
-	-o-border-top-right-radius: .3em;
-	border-top-right-radius: .3em;
 	-moz-border-bottom-right-radius: .3em;
 	-webkit-bottom-right-border-radius: .3em;
 	-o-border-bottom-right-radius: .3em;
@@ -87,18 +105,17 @@ nav ul {
 }
 
 nav li {
-	width: 20%; /* 120px */
+	width: 16.6666666%; /* 140px/840px */
 	float: left;
 }
 
 nav a {
 	text-decoration: none;
-	font-family: 'Metal Mania', sans-serif, cursive;
-	font-size: 1.5em;
+	font-size: 1em;
 	color: #000;
 	display: block;
-	height: 60px;
-	line-height: 60px;
+	height: 30px;
+	line-height: 30px;
 	text-align: center;
 }
 
@@ -109,6 +126,7 @@ nav a:visited {
 nav a:hover {
 	color: #0000ff;
 	background: #f5f5dc;
+	border-top: dashed 1px #000;
 	border-right: dashed 1px #000;
 	border-left: dashed 1px #000;
 	-moz-border-radius: .3em;
@@ -117,9 +135,10 @@ nav a:hover {
 	border-radius: .3em;
 }
 
-nav li#current a {
+nav a:active {
 	color: #800000;
 	background: #f5f5dc;
+	border-top: dashed 1px #000;
 	border-right: dashed 1px #000;
 	border-left: dashed 1px #000;
 	-moz-border-radius: .3em;
@@ -132,7 +151,6 @@ nav li#current a {
 
 #main_cta {
 	width: 100%; /* 960px */
-	height: 280px;
 	overflow: hidden;
 	border: solid 1px #000;
 	-moz-border-radius: .3em;
@@ -140,24 +158,22 @@ nav li#current a {
 	-o-border-radius: .3em;
 	border-radius: .3em;
 	background: #f5f5dc;
-	float: left;
 }
 
 #rides_container, #kitchen_container {
-	width: 27.33485%; /* 240px/878px */
+	width: 29.1666666%; /* 280px/960px */
+	margin-left: 20px;
+	margin-right: 20px;
+	float: left;
 }
 
 #church_container {
-	width: 36.44646%; /* 320px/878px */
+	width: 33.3333333%; /* 320px/960px */
+	float: left;
 }
 
 img {
 	max-width: 100%;
-}
-
-.cta_img {
-	margin-left: 2.2779%; /* 20px/878px */
-	float: left;
 }
 
 #main_cta img {
@@ -175,46 +191,36 @@ img {
 	height: 220px;
 }
 
-h1, h2, h3 {
-	font-family: 'Hammersmith One', sans-serif, cursive;
-	text-align: center;
-}
-
-h1 {
-	font-size: 2em;
-}
-
 h2 {
 	font-size: 1.5em;
 }
 
-h3 {
-	font-size: 1.25em;
-}
-
-#main_cta h1, #main_cta h2 {
-	margin-top: 10px;
-	margin-bottom: 20px;
+#home_body h1 {
+	margin-bottom: 10px;
+	font-size: 1.75em;
 }
 
 /*----End of Home_Page Main CTA ----Start of Home_Page Small CTA---*/
 
+#small_cta {
+	margin-top: 20px;
+	width: 100%; /* 960px */
+}
+
 #services, #prayer, #giving {
-	width: 31.5909%; /* 278px/880px */
-	height: 250px;
-	margin-top: 30px;
-	margin-bottom: 20px;
+	width: 31.0416666%; /* 298px/960px */
 	border: solid 1px #000;
 	-moz-border-radius: .3em;
 	-webkit-border-radius: .3em;
 	-o-border-radius: .3em;
 	border-radius: .3em;
 	background: #f5f5dc;
+	overflow: hidden;
 	float: left;
 }
 
 #services, #prayer {
-	margin-right: 2.2779%; /* 20px/880px */
+	margin-right: 3.125%; /* 30px/960px */
 }
 
 #prayer, #giving {
@@ -283,17 +289,11 @@ h3 {
 	background: -moz-linear-gradient(top, #F47A20, #EEC000);
 }
 
-/*-----End of Home_Page Small CTA-----Start of Ministries_Page CTAs----*/
+/*-----End of Home_Page Small CTA-----Start of About_Us_Page----*/
 
-#ministry_body {
-	width: 100%; /* 960px */
-	float: left;
-}
-
-#prayer_cta, #young_cta, #women_cta, #men_cta {
+#first_church, #second_church, #third_church, #fourth_church {
 	width: 48.75%; /* 468px/960px */
-	height: 220px;
-	margin-bottom: 20px;
+	height: 340px;
 	background: #f5f5dc;
 	border: solid 1px #000;
 	-moz-border-radius: .3em;
@@ -303,41 +303,108 @@ h3 {
 	float: left;
 }
 
+#first_church, #third_church {
+	margin-right: 2.08333%; /* 20px/960px */
+}
+
+#first_church, #second_church {
+	margin-bottom: 20px;
+}
+
+#container_1903, #container_1914, #container_1931, #container_1954 {
+	width: 91.88034%; /* 430/468px */
+	margin: 10px 4.2735%; /* 20px/470px */
+}
+
+#first_church img, #second_church img, #third_church img, #fourth_church img {
+	max-width: 100%;
+}
+
+#first_church p, #second_church p, #third_church p, #fourth_church p {
+	width: 91.88034%; /* 430/470px */
+	margin-left: 4.2735%; /* 20px/470px */
+	font-family: 'Georgia', sans-serif, cursive;
+}
+
+/*-----End of About_Us_Page----Start of Sermons_Page----*/
+
+#first_month, #second_month, #third_month, #fourth_month, #fifth_month, #sixth_month {
+	width: 31.04166%; /* 298px/960px */
+	height: 300px;
+	padding-top: 10px;
+	background: #f5f5dc;
+	border: solid 1px #000;
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	-o-border-radius: .3em;
+	border-radius: .3em;
+	float: left;
+}
+
+#first_month ul, #second_month ul, #third_month ul, #fourth_month ul, #fifth_month ul, #sixth_month ul {
+	list-style-type: disc;
+	margin-top: 10px;
+	margin-left: 13.42281%; /* 40px/298px */	
+}
+
+.sermon {
+	margin-bottom: 10px;
+	font-family: 'Georgia', sans-serif, cursive;
+	list-style-type: none;
+}
+
+#second_month, #fifth_month {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+#first_month, #second_month, #third_month {
+	margin-bottom: 20px;
+}
+
+/*-----End of Sermons_Page-----Start of Ministries_Page CTAs----*/
+
+#prayer_cta, #young_cta, #women_cta, #men_cta {
+	width: 48.75%; /* 468px/960px */
+	height: 240px;
+	background: #f5f5dc;
+	border: solid 1px #000;
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	-o-border-radius: .3em;
+	border-radius: .3em;
+	float: left;
+}
+
+#prayer_cta, #young_cta {
+	margin-bottom: 20px;
+}
+
 #prayer_cta, #women_cta {
 	margin-right: 2.08333%; /* 20px/960px */
 }
 
-.img_container {
-	width: 42.7350427%; /* 200px/468px */
+#prayer_container, #young_container, #women_container, #men_container {
+	width: 47.00854%; /* 220px/468px */
+	margin: 10px 2.13675%; /* 10px/468px */
 }
 
-#ministry_body img {
+#prayer_cta img, #young_cta img, #women_cta img, #men_cta img {
 	max-width: 100%;
-	height: 200px;
-	border: solid 1px #000;
-	-moz-border-top-left-radius: .3em;
-	-webkit-border-top-left-radius: .3em;
-	-o-border-top-left-radius: .3em;
-	border-top-left-radius: .3em;
-	-moz-border-bottom-right-radius: .3em;
-	-webkit-border-bottom-right-radius: .3em;
-	-o-border-bottom-right-radius: .3em;
-	border-bottom-right-radius: .3em;
 	float: left;
 }
 
-#ministry_body p {
+#prayer_cta p, #young_cta p, #women_cta p, #men_cta p {
 	text-align: center;
 	font-family: 'Georgia', sans-serif, cursive;
 }
 
-#ministry_body ul {
+#prayer_cta ul, #young_cta ul, #women_cta ul, #men_cta ul {
 	width: 42.7350427%; /* 200px/468px */
-	list-style-type: circle;
+	list-style-type: disc;
 	margin-top: 10px;
 	float: left;
 	padding-left: 6.4102564%; /* 30px/468px */
-	
 }
 
 /*----End of Ministries_Page CTAs----Start of Tithe_Page CTAs-----*/
@@ -351,7 +418,6 @@ h3 {
 	width: 48.75%; /* 468px/960px */
 	background: #f5f5dc;
 	height: 220px;
-	margin-bottom: 20px;
 	border: solid 1px #000;
 	-moz-border-radius: .3em;
 	-webkit-border-radius: .3em;
@@ -362,6 +428,10 @@ h3 {
 
 #personal_info {
 	margin-right: 2.08333%; /* 20px/960px */
+}
+
+#billing_info {
+	margin-bottom: 20px;
 }
 
 #tithe_body h1 {
@@ -469,11 +539,58 @@ form {
 	line-height: 20px;
 }
 
-/*----End of Tithe_Page CTAs-----Start of Global Footer------*/
+/*----End of Tithe_Page CTAs-----Start of Contact_Us_Page----*/
+
+#main_office, #school_office, #leaders, #directions {
+	width: 48.75%; /* 468px/960px */
+	height: 260px;
+	background: #f5f5dc;
+	border: solid 1px #000;
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	-o-border-radius: .3em;
+	border-radius: .3em;
+	float: left;
+	overflow: hidden;
+}
+
+#main_office, #leaders {
+	margin-right: 2.08333%; /* 20px/960px */
+}
+
+#main_office, #school_office {
+	margin-bottom: 20px;
+}
+
+#main_office h2, #school_office h2, #leaders h2, #directions h2 {
+	margin: 10px 4.2735043%; /* 20px/468px */
+	text-align: left;
+}
+
+.address {
+	width: 200px;
+}
+
+#main_office p, #school_office p, #leaders p, #directions p {
+	margin-bottom: 10px;
+	margin-left: 4.2735043%; /* 20px/468px */
+}
+
+#school_address {
+	margin-top: 30px;
+}
+
+#social_media {
+	margin-top: 30px;
+}
+
+#facebook {
+	margin-left: 4.2735043%; /* 20px/468px */
+}
+
+/*----End of Contact_Us_Page-----Start of Global Footer------*/
 
 footer {
-	margin-bottom: 10px;
-	margin-top: 10px;
 	background: #b0e0e6;
 	border: solid 1px #000;
 	-moz-border-radius: .3em;
@@ -481,11 +598,11 @@ footer {
 	-o-border-radius: .3em;
 	border-radius: .3em;
 	font-size: .75em;
+	overflow: hidden;
 	float: right;
 }
 
 footer p {
-	width: 18.75%; /* 180px/960px */
 	height: 30px;
 	line-height: 30px;
 	padding-left: 2.2779%; /* 20px/960px */
@@ -493,7 +610,6 @@ footer p {
 }
 
 footer ul {
-	width: 81.25%; /* 780px/960px */
 	padding-left: 450px;
 }
 
@@ -503,10 +619,9 @@ footer li {
 }
 
 footer a {
-	display: block;
 	height: 30px;
 	line-height: 30px;
-	text-align: center;
+	text-align: left;
 }
 
 /*------End of Global Footer------------Media Queries------------------------------------*/
