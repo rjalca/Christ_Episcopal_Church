@@ -57,7 +57,7 @@ h1, h2, h3 {
 /*--------End of Global Body------Start of Global Header-----*/
 
 #logo_container {
-	width: 12.5%; /* 120px/960px */
+	width: 12.22916667%; /* 118px/960px */
 }
 
 #logo {
@@ -74,9 +74,14 @@ h1, h2, h3 {
 	float: left;
 }
 
-header h1 {
+nav {
+	width: 87.5%;
+	margin-left: 12.5%;
+}
+
+nav h1 {
+	width: 100%;
 	font-family: 'Metal Mania', sans-serif, cursive;
-	width: 87.5%; /* 840px/960px */
 	height: 50px;
 	line-height: 50px;
 	font-size: 2.5em;
@@ -88,20 +93,19 @@ header h1 {
 	-webkit-top-right-border-radius: .15em;
 	-o-border-top-right-radius: .15em;
 	border-top-right-radius: .15em;
-	margin-left: 12.708333%; /* 122px/960px */
 }
 
 nav ul {
-	width: 87.5%; /* 840px/960px */
+	width: 100%; /* 840px/960px */
+	
+	background: #b0e0e6;
 	border-bottom: solid 1px #000;
 	border-right: solid 1px #000;
-	background: #b0e0e6;
 	-moz-border-bottom-right-radius: .3em;
 	-webkit-bottom-right-border-radius: .3em;
 	-o-border-bottom-right-radius: .3em;
 	border-bottom-right-radius: .3em;
 	list-style-type: none;
-	margin-left: 12.708333%; /* 122px/960px */
 	overflow: hidden;
 }
 
@@ -163,6 +167,7 @@ nav a:active {
 
 #rides_container, #kitchen_container {
 	width: 29.1666666%; /* 280px/960px */
+	margin-top: 10px;
 	margin-left: 20px;
 	margin-right: 20px;
 	float: left;
@@ -170,6 +175,7 @@ nav a:active {
 
 #church_container {
 	width: 33.3333333%; /* 320px/960px */
+	margin-top: 10px;
 	float: left;
 }
 
@@ -617,21 +623,21 @@ footer a {
 /*------End of Global Footer------------Media Queries------------------------------------*/
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media screen and (min-width: 768px) and (max-width: 959px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
 
 }
 
 /* Mobile Landscape size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 520px) and (max-width: 767px) {
+@media only screen and (min-width: 515px) and (max-width: 767px) {
 
 
 
 }
 
 /* Mobile Portrait size to Mobile Landscape (devices and browsers) */
-@media only screen and (max-width: 519px) {
+@media only screen and (max-width: 514px) {
 
 
 
