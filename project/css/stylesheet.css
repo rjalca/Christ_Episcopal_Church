@@ -101,6 +101,7 @@ nav ul {
 	-o-border-bottom-right-radius: .3em;
 	border-bottom-right-radius: .3em;
 	list-style-type: none;
+	margin-left: 12.708333%; /* 122px/960px */
 	overflow: hidden;
 }
 
@@ -174,17 +175,6 @@ nav a:active {
 
 img {
 	max-width: 100%;
-}
-
-#main_cta img {
-	-moz-border-bottom-right-radius: .3em;
-	-webkit-border-bottom-right-radius: .3em;
-	-o-border-bottom-right-radius: .3em;
-	border-bottom-right-radius: .3em;
-	-moz-border-bottom-left-radius: .3em;
-	-webkit-border-bottom-left-radius: .3em;
-	-o-border-bottom-left-radius: .3em;
-	border-bottom-left-radius: .3em;
 }
 
 #church_img {
